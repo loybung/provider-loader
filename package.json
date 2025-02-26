@@ -1,0 +1,32 @@
+{
+	"name": "@loybung/provider-loader",
+	"version": "1.0.0",
+	"description": "A utility to dynamically load NestJS providers and i18n data from files",
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/loybung/provider-loader"
+  },
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist/**/*"
+	],
+	"scripts": {
+		"git:push": "git add . && git commit -m \"🎉 feat: release\" && git push -u origin main",
+		"build": "tsc",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": ["nestjs", "provider", "dynamic", "loader", "i18n", "necord"],
+	"author": "Aphichat Maneechansuk",
+	"license": "MIT",
+	"dependencies": {
+		"@nestjs/common": "^10.0.0",
+		"@nestjs/core": "^10.0.0",
+		"glob": "^11.0.0"
+	},
+	"devDependencies": {
+		"@types/glob": "^8.1.0",
+		"@types/node": "^20.0.0",
+		"typescript": "^5.0.0"
+	}
+}

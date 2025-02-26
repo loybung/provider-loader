@@ -1,0 +1,13 @@
+src/
+*.ts
+
+tsconfig.json
+.gitignore
+
+node_modules/
+
+tests/
+*.md
+
+*.log
+*.tgz
