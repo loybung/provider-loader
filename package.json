@@ -1,6 +1,6 @@
 {
 	"name": "@loybung/provider-loader",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A utility to dynamically load NestJS providers and i18n data from files",
 	"repository": {
     "type": "git",
