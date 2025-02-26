@@ -1,6 +1,6 @@
 # Nest Provider Loader
 
-A utility to dynamically load NestJS providers and i18n data from files, compatible with `@UseInterceptors` and frameworks like `necord`.
+A utility to dynamically load NestJS providers and i18n data from files, compatible frameworks like `necord`.
 
 ## Installation
 
