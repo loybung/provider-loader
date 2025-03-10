@@ -5,13 +5,12 @@ import * as path from "path";
 export interface ProvideHandlersOptions {
 	folderPath: string;
 	filePattern: string;
-	logProviders?: boolean;
 }
 
 export async function provideHandlers(
 	options: ProvideHandlersOptions
 ): Promise<Provider[]> {
-	const { folderPath, filePattern, logProviders = true } = options;
+	const { folderPath, filePattern } = options;
 	const files = glob.sync(`${folderPath}/**/${filePattern}.{js,ts}`);
 	const providers: Type<any>[] = [];
 
@@ -29,11 +28,5 @@ export async function provideHandlers(
 		}
 	}
 
-	if (logProviders) {
-		console.log(
-			"Providers loaded:",
-			providers.map((p) => p.name)
-		);
-	}
 	return providers;
 }
